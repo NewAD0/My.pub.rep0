@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class Input {
+    public static void main(String[] args) {
+        Scanner s1 = new Scanner(System.in);
+        System.out.println("Введите первое число");
+        float x1 = s1.nextFloat();
+        System.out.println("Вы ввели " + x1);
+
+        Scanner s2 = new Scanner(System.in);
+        System.out.println("Введите второе число");
+        float x2 = s2.nextFloat();
+        System.out.println("Вы ввели " + x2);
+
+        Scanner s3 = new Scanner(System.in);
+        System.out.println("Введите операцию +;-;*,/ ");
+        char x3 = s3.next().charAt(0);
+        switch (x3) {
+            case '+':
+                System.out.println("Ответ: " + (x1 + x2));
+                break;
+            case '-':
+                System.out.println("Ответ: " + (x1 - x2));
+                break;
+            case '*':
+                System.out.println("Ответ: " + (x1 * x2));
+                break;
+            case '/':
+                System.out.println("Ответ: " + (x1 / x2));
+                break;
+
+            default:
+                System.out.println("Операция не распознана.");
+        }
+
+
+    }
+
+}
